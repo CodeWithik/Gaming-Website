@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="game-controller.png"> 
+    <title>Gaming-Zone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        body{
+            background: url('/banner\ image.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: absolute;
+            width: 100%; 
+            background-color: rgb(0, 0, 0);
+        }
+        
+
+
+        nav{
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.439);
+            justify-content: center;
+            height: 90px;   
+            position: fixed;
+             width: 100vw;
+        }
+        li{
+            list-style-type: none;
+            margin-inline: 20px;
+            display: flex;
+            align-items: center; 
+            
+        }
+        a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.737);
+            font-size: 16px; 
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            
+        }
+
+        a:hover{
+            text-decoration: underline solid cyan 20%;      
+        }
+       
+        .logo{
+            width: 150px;
+            height: 120px;    
+            margin-right: 600px;  
+            animation-name: game;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes game {
+            
+            0%{
+                transform: translateY(0px);
+            }
+
+            100%{
+                transform: translateY(-10px);   
+            }
+        }
+
+        .btn{
+            width: 120px;
+            height: 50px;
+            margin-top: 20px;          
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-weight: 900;
+            box-shadow: 0px 1px 3px 5px cyan;
+            font-size: 20px;
+            margin-left: 70px;  
+            background-color: black; 
+            color: white;
+            border-radius: 100px;
+            transition: 0.9s;
+            border: none;
+        }
+
+        .btn:hover{
+            background-color: rgb(255, 255, 255);  
+            color: black; 
+            cursor: pointer; 
+        }
+
+        .gaming{
+            margin-left: 200px; 
+        }
+        .p1{
+            font-size: 80px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            margin-top: 180px;     
+            animation-name: g1;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-duration: 4s; 
+            animation-timing-function: ease-in;    
+        }
+
+        .p1::first-letter{
+            color: cyan;
+        }
+        
+        @keyframes g1 {
+            0%{ 
+                color: red;
+            }
+
+            25%{
+               color: white;
+            }
+
+            50%{
+                color: red;
+            }
+
+            75%{
+               color: white; 
+            }
+
+            100%{
+                letter-spacing: 10px;
+            } 
+        }
+
+
+        .b1{ 
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            font-size: 14px; 
+            margin-top: 70px; 
+        }
+
+        
+        .b2{ 
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            font-size: 14px;  
+            animation-name: b2;     
+            animation-timing-function: ease-in;
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;   
+            animation-iteration-count: infinite;  
+        }
+         
+
+        @keyframes b2 { 
+            0%{ 
+                color: red; 
+                
+            }
+            25%{
+                color: white;
+            }
+            50%{
+                color: red;
+               
+            }
+            75%{
+                color: white;
+            }
+            100%{
+                color: red;
+               
+            }
+        }
+
+
+        .container2{
+            display: flex;
+        }
+
+        video{
+            margin-top: 380px;  
+            box-shadow: 0px 10px 10px 10px rgb(255, 0, 149);  
+            width: 40%; 
+            border-top-right-radius: 20px; 
+            border-bottom-left-radius: 20px;  
+            position: absolute;
+            margin-left: 700px; 
+        }
+
+        h1{
+            color: white;
+            margin-top: 200px; 
+            margin-left: 550px;  
+            animation-name: b2;     
+            animation-timing-function: ease-in;
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;   
+            animation-iteration-count: infinite;
+        } 
+
+        #banner2{
+            margin-top: 320px;
+            position: absolute;   
+            animation-name: game2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+
+        @keyframes game2 {
+            from{
+                transform: translateX(0px);
+            }
+
+            to{
+                transform: translateX(-30px);
+            }
+        }
+
+        footer{
+            color: white; 
+            margin-top: 620px; 
+            background-color: rgba(255, 0, 149);   
+            padding: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+    </style> 
+</head>
+<body>
+    <nav>
+        <img class="logo" src="Gaming Zone.png" alt="games"> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li> 
+        <li><a href="Contact.html">Contact</a></li>  
+        <button class="btn">PlayGame</button>
+    </nav>
+
+
+        <div class="gaming"> 
+            <p class="p1">Free Play <br> Gaming Zoon</p>
+            <button class="btn b1">PlayGame</button>
+            <button class="btn b2">WATCH NOW</button>
+        </div>
+
+     
+        <div class="container2">
+            <h1>Free-Play AOXO</h1>
+            <img id="banner2" src="Play banner.png" alt="">
+            <video src="video_games_-_89894 (540p).mp4" controls autoplay loop></video>
+        </div>
+    
+
+        <footer>Copyright © 2024 CodeWithik.com</footer>
+</body>
+</html>

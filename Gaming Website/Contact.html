@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="game-controller.png">   
+    <title>Gaming-Zone</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.439);
+            justify-content: center;
+            height: 90px;
+            position: fixed;
+            width: 100vw;
+        }
+
+        body {
+            position: absolute;
+            width: 100%; 
+            background-color: rgba(0, 0, 0, 0.788);
+        }
+
+        li {
+            list-style-type: none;
+            margin-inline: 20px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.737);
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        a:hover {
+            text-decoration: underline solid cyan 20%;
+        }
+
+        .logo {
+            width: 150px;
+            height: 120px;
+            margin-right: 600px;
+            animation-name: game;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes game {
+
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .btn {
+            width: 120px;
+            height: 50px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            box-shadow: 0px 1px 3px 5px cyan;
+            font-size: 20px;
+            margin-left: 70px;
+            background-color: black;
+            color: white;
+            border-radius: 100px;
+            transition: 0.9s;
+            border: none;
+        }
+
+        label{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+
+
+        .btn:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            cursor: pointer;
+        }
+
+
+
+        .btn-1{
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-weight: 900;
+            box-shadow: 0px 1px 3px 5px cyan;
+            font-size: 20px;
+            color: white;
+            border-radius: 100px;
+            background-color: black; 
+            transition: 0.9s;
+            border: none;
+            padding: 10px;
+        }
+
+        .btn-1:hover{
+            background-color: rgb(255, 255, 255);
+            color: black;
+            cursor: pointer;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+       
+        .container {
+            margin: 100px 200px 0px 200px;       
+            font-family: 'Courier New', Courier, monospace; 
+            border-radius: 5px;
+            background-color: #00fcfc9e; 
+            padding: 20px;
+        }
+
+
+        
+        h1{
+            margin-top: 150px; 
+            text-align: center;  
+            color: white;
+        }
+
+        span{
+            color: rgb(255, 0, 149); 
+        }
+        
+        
+        footer{
+            color: white; 
+            margin-top: 120px;   
+            background-color: rgba(255, 0, 149);   
+            padding: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img class="logo" src="Gaming Zone.png" alt="games">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li> 
+        <button class="btn">PlayGame</button>
+    </nav>
+    
+    <h1>Contact <span>US</span></h1> 
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your email..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Pakistan</option>
+                <option value="canada">Malaysia</option>
+                <option value="usa">Aptech</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input class="btn-1" type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+    <footer>Copyright © 2024 CodeWithik.com</footer>
+</body>
+
+</html>
